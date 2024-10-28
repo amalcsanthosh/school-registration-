@@ -1,0 +1,119 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #0b0c0c;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .registration-form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .registration-form-container:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  label {
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+  }
+  
+  input,
+  select {
+    padding: 10px 12px;
+    border: 1px solid #d1d9e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #3a3a3a;
+    background-color: #f8fafc;
+    outline: none;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #82b1ff;
+    box-shadow: 0 0 4px rgba(130, 177, 255, 0.5);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+
+.button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"] {
+    background-color: #73e88a;
+    color: white;
+    border: none;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #05cd20;
+  }
+  
+  .cancel-button {
+    background-color: #f8d7da;
+    color: #eb5261;
+    border: 1px solid #f5c6cb;
+  }
+  
+  .cancel-button:hover {
+    background-color: #e1081e;
+  }
+  
+  span {
+    color: #e57373;
+    font-size: 0.85rem;
+    margin-top: 5px;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .registration-form-container {
+      padding: 20px;
+    }
+  
+    button {
+      padding: 12px;
+    }
+  }
+  
